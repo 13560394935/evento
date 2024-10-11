@@ -46,6 +46,7 @@ export default function EventCard({ event }: EventCardProps) {
           width={500}
           height={280}
           className="h-[60%] object-cover"
+          quality={80}
         ></Image>
         <div className="flex-1 flex flex-col items-center justify-center">
           <h2 className="text-2xl">{event.name}</h2>
@@ -53,7 +54,7 @@ export default function EventCard({ event }: EventCardProps) {
           <p className="text-sm text-white/50">{event.location}</p>
         </div>
 
-        <section className="absolute left-[12px] top-[12px] h-[45px] w-[35px] bg-black/30 rounded-md ">
+        <section className="absolute text-center left-[12px] top-[12px] h-[45px] w-[35px] bg-black/30 rounded-md ">
           <p className="text-xl font-bold -mb-[5px]">
             {new Date(event.date).getDate().toString().padStart(2, "0")}
           </p>

@@ -3,7 +3,6 @@ import EventsList from "@/components/events-list";
 import { Suspense } from "react";
 import LoadingCard from "../../../components/loading-card";
 import { capitalize } from "@/lib/utils";
-import { useSearchParams } from "next/navigation";
 import { z } from "zod";
 
 type propType = {

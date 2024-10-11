@@ -25,9 +25,10 @@ export default function EventItem({ eventItem }: { eventItem: EventoEvent }) {
             width={300}
             height={210}
             className="rounded-xl border-2 border-white/50 object-cover"
+            quality={80}
           ></Image>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col ">
             <p className="text-md text-white/75">
               {new Date(eventItem.date).toLocaleDateString("en-US", {
                 weekday: "long",
